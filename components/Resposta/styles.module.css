@@ -1,0 +1,84 @@
+.resposta {
+    display: flex;
+    height: 100px;
+    margin: 10px;
+    min-width: 500px;
+    width: 80%;
+    perspective: 1000px;
+}
+
+.respostaRevelada {
+
+}
+
+.frente {
+    background-color: #FFF;
+    color: #000;
+    align-items: center;
+    border-radius: 12px;
+    padding: 15px;
+}
+
+.verso {
+    transform: rotateY(180deg);
+}
+
+.verso > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    border-radius: 12px;
+}
+
+.certo {
+    background-color: #2BAA6D;
+}
+
+.errado {
+    background-color: #E44A4C;
+}
+
+.certo .valor, .errado .valor {
+    font-size: 1.5rem;
+}
+
+.frente, .verso {
+    position: absolute;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    backface-visibility: hidden ;
+    -webkit-backface-visibility: hidden;
+}
+
+.conteudo{
+    display: flex;
+    flex: 1;
+    position: relative;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.conteudo.respostaRevelada {
+    transform: rotateY(180deg);
+
+} 
+
+.letra {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-right: 20px;
+}
+
+.valor {
+    font-size: 1.3rem;
+    font-weight: 700;
+}
