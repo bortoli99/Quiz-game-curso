@@ -4,7 +4,7 @@ import QuestionarioComponente from '../components/Questionario'
 import Questao from '../model/Questao'
 import styles from '../styles/Home.module.css'
 
-const BASE_URL = 'http://localhost:3000/api'
+const BASE_URL = 'https://quiz-game-curso.vercel.app/api'
 
 export default function Home() {
 
@@ -59,7 +59,7 @@ export default function Home() {
 
   function irParaProximoPasso() {
     const proximoid = idProximaPergunta()
-
+    https://quiz-game-curso.vercel.app/
     proximoid ? irParaProximaQuestao(proximoid) : finalizar()
   }
 
