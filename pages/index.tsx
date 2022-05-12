@@ -4,7 +4,7 @@ import QuestionarioComponente from '../components/Questionario'
 import Questao from '../model/Questao'
 import styles from '../styles/Home.module.css'
 
-const BASE_URL = 'https://quiz-game-curso.vercel.app/api'
+const BASE_URL = 'localhost:3000/api'
 
 export default function Home() {
 
