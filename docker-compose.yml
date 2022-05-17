@@ -1,0 +1,9 @@
+version: '3'
+services:
+  api:
+    image: node:16.3
+    volumes: 
+      - ./:/quiz-game
+    ports:
+      - 3000:3000
+    command: bash -c "cd /quiz-game && npm i && npm run build && npm start"
